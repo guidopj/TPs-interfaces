@@ -1,0 +1,21 @@
+<!--login.html-->
+<html ng-app="intencionInscripcionApp">
+	<head>
+		<title>Intencion de inscripcion</title>
+		
+		<script type="text/javascript" src="lib/angular.min.js" ></script>
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="home">
+			<div class="mensaje">
+				<span>Estamos tratando de mejorar la oferta de horarios de la facu</span>
+				<span>Ayudanos respondiendo la encuesta,solo te tomara 10 minutos</span>
+			</div>
+			<div class="login">
+				<input type="text" placeholder="Ingresatumail" ng-model="user.mail"/>
+				<button type="submit" ng-click="autenticar()"> Responder</button>
+			</div>
+		</div>
+	</body>
+</html>
