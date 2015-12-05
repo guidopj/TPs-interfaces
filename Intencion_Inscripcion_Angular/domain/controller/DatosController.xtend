@@ -1,11 +1,8 @@
-package duelo_web_xtend
+package controller
 
 import org.uqbar.xtrest.api.annotation.Controller
-import org.uqbar.xtrest.json.JSONUtils
 import org.uqbar.xtrest.api.XTRest
-import org.uqbar.xtrest.api.annotation.Get
-import org.uqbar.xtrest.api.Result
-import org.uqbar.xtrest.http.ContentType
+import org.uqbar.xtrest.json.JSONUtils
 
 @Controller
 class DatosController {

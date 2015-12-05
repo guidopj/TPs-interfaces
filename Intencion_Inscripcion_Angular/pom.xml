@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>duelo_web_xtend</groupId>
-  <artifactId>duelo_web_xtend</artifactId>
+  <groupId>intencion_inscripcion_angular</groupId>
+  <artifactId>intencion_inscripcion_angular</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
   <parent>
@@ -15,6 +15,8 @@
   	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   
+  
+  
   <dependencies>
   	<dependency>
   		<groupId>org.uqbar</groupId>
@@ -27,6 +29,21 @@
   		<version>3.5.1</version>
   	</dependency>
   	
-
   </dependencies>
+  
+  <build>
+  	<plugins>
+	<plugin>
+		<artifactId>maven-compiler-plugin</artifactId>
+		<version>2.3.2</version>
+		<configuration>
+			<source>1.7</source>
+			<target>1.7</target>
+			<descriptorRefs>
+          <descriptorRef>jar-with-dependencies</descriptorRef>
+        </descriptorRefs>
+		</configuration>
+	</plugin>
+   </plugins>
+  </build>
 </project>
