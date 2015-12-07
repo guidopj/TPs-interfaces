@@ -1,3 +1,24 @@
+body { 
+  background-image: url("../assets/images/images.jpg"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#divDescripcion{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    margin: 100px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid black;
+    opacity: 0.9;
+}
+
 .panelPersonaje {
 	height: 300px;
 }

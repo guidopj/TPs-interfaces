@@ -1,1 +1,2 @@
-angular.module('duelosApp', [])
+//problemas con ng-route
+angular.module('encuestaApp',[]);

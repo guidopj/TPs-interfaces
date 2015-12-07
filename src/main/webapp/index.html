@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es" ng-app="duelosApp">
+<html lang="es" data-ng-app="encuestaApp">
 	<head>
-		<title>Pruebita Interfaces</title>
-		<meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0">
+		<title>Intencion Inscripcion</title>
+		<meta charset="UTF-8" content="width=device-width, initial-scale=1.0">
 		
 		<!-- angular, jquery, bootstrap -->
-		<script src="lib/angular.js"></script>
+		<script src="lib/angular.min.js"></script>
 		<script src="lib/jquery.js"></script>
 		<link href="bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<script src="bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -21,29 +21,19 @@
 		<script src="js/directives.js"></script>
 	</head>
 
-	<body data-ng-controller="DatosPersonajeController as datos">
-		<div class="container-fluid spanBorder">
-			<header>
-				<div align="center" class="header">
-					<h1>Seleccione un personaje para el duelo</h1>
-				</div>		
-			</header>
-			
-			<div class="row spanBorder">
-				<div class="col-sm-6 col-xs-12 col-md-4 left-container">
-					<form class="well well-lg">
-						<div class="row" > 
-							<div class="col-xs-6 col-md-6 center-container" ng-repeat=" personaje in datos.personajes">
-								<img class="img-responsive btn"  ng-src={{personaje.source}} ng-click= "datos.seleccionarPersonaje(personaje)">
-							</div>					
-						</div>
-					</form>
-				</div>		
-				<selected-element-data ng-if="datos.hayUnPersonajeSeleccionado"></selected-element-data>
+	<body data-ng-controller="LoginCtrl">
+		<div class="container">
+			<div class="well" style="margin: 20px;background-color: rgba(0, 0, 0, 0.6); font-family: Times New Roman;color: white; font-size: 20px;text-align: center;">
+				<span>Estamos tratando de mejorar la oferta de horarios de la facu.</span><br/>
+				<span>Ayudanos respondiendo la encuesta, solo te tomara 10 minutos</span>
 			</div>
-			
-			<footer-data></footer-data>
 		</div>
-	
+				
+		<div class="container">
+			<div style="width: 520px;height:160px;margin: 200px;">
+				<input style="height:50px;margin-bottom: 10px;" type="text" class="form-control" placeholder="Ingresa tu mail" data-ng-model="user.mail"/>
+				<button style="height:50px;" type="submit"  class="btn btn-success btn-block" data-ng-click="autenticar()">Responder</button>
+			</div>
+		</div>
 	</body>
 </html>
