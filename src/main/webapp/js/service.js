@@ -7,17 +7,17 @@ app.service('EncuestaService',function($http){
 			$http.get('/chequear',mail).success(callback);
 		}
 	
-		responderEncuesta:function(respuesta,callback){
-			$http.get('/responder',respuesta).success(callback);
-		},
+//		responderEncuesta:function(respuesta,callback){
+//			$http.get('/responder',respuesta).success(callback);
+//		},
 
-		getCarreras:function(){
-			//obtienelalistadecarrerasconeldetalledelasmateriasylodevuelve
-		},
-
-		getTurnos:function(){
-			//obtienelalistadeturnosylodevuelve
-	
-		}
+//		getCarreras:function(){
+//			//obtienelalistadecarrerasconeldetalledelasmateriasylodevuelve
+//		},
+//
+//		getTurnos:function(){
+//			//obtienelalistadeturnosylodevuelve
+//	
+//		}
 	}
 });
