@@ -1,0 +1,52 @@
+<html>
+	<head><title>Responder</title></head>
+<body>
+
+<div class="container">
+	<div>
+		<h3>Intencion de cursada</h3>
+		<span>Elegi la carrera que estudias</span>
+		
+		<select class="form-control" data-ng-options="carrera as carrera.labelforcarreraincarreras" data-ng-model="carreraSeleccionada"></select>
+	
+		<span>Ano en el que ingresaste a la facu</span>
+	
+		<input class="form-control"type="text" data-ng-model="respuesta.anioIngreso"/>
+	
+		<span>¿Cuantos finales aprobaste?</span>
+	
+		<input class="form-control"type="text" data-ng-model="respuesta.finalesAprobados"/>
+	
+		<span>¿Cuantos finales desaprobaste?</span>
+	
+		<input class="form-control"type="text" data-ng-model="respuesta.finalesDesaprobados"/>
+	
+		<span>¿Cuantas materias aprobaste en la cursada?</span>
+	
+		<input class="form-control"type="text" data-ng-model="respuesta.cursadasAprobadas"/>
+	
+		<p>¿A que materias pensas anotarte el proximo cuatrimestre?</p>
+	
+		<div class="col-md-8">
+			<span>Materia</span>
+	
+			<select class="form-control" data-ng-options="materia as materia.label for materia in carreraSeleccionada.materias" data-ng-model="materiaSeleccionada"></select>
+	
+			<span>Turno</span>
+	
+			<select class="form-control" data--ng-options="turno as turno.label for turno in turnos" data-ng-model="turnoSeleccionado"></select>
+	
+			<button type="submit"class="btn btn-primary btn-block" data-ng-click="agregarMateria()">Agregar</button>
+	
+		</div>
+		
+		<div class="col-md-4">
+			<div data-ng-repeat="porCursarinrespuesta.materias">
+				<h4>{{porCursar.materia.label}}-<small>{{porCursar.turno.label}}</small></h4>
+			</div>
+		</div>
+	</div>
+	<button type="submit"class="btnbtn-primary btn-block" data-ng-click="contestar()">Enviar Respuestas</button>
+</div>
+</body>
+</html>

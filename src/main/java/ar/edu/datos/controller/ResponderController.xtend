@@ -17,13 +17,12 @@ class ResponderController {
 		XTRest.start(ResponderController,9200)
 	}
 	
-	@Get('/chequear/:mail')
-	def Result chequearEmail(){
-		response.contentType=ContentType.APPLICATION_JSON
-		//var boolean completo = EncuestaHome.instance.chequearSiCompleto(String.valueOf(mail))
-		ok(true.toJson)
-		
-	}
+//	@Get('/chequear/:mail')
+//	def Result chequearEmail(){
+//		response.contentType=ContentType.APPLICATION_JSON
+//		//var boolean completo = EncuestaHome.instance.chequearSiCompleto(String.valueOf(mail))
+//		ok(true.toJson)
+//	}
 
 //	@Get('/carreras')
 //	def Result carreras(){
